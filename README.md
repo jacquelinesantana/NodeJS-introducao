@@ -20,6 +20,24 @@ Para esse tutorial irei utilizar o VS Code.
 5. criar um novo arquivo com nome index.js
 6. para executar a aplicação usar comando `node index.js`
 
+![02- criar projeto-node](https://user-images.githubusercontent.com/8031302/198862265-760eda0d-63f9-425b-96f3-3a77a0733240.jpg)
+
+(imagem criando projeto - definir a pasta de trabalho)
+
+![03- abrir terminal-node](https://user-images.githubusercontent.com/8031302/198862342-c2fdfa71-73bf-4bae-b5f7-f290aa690a14.jpg)
+
+(imagem abrindo o terminal)
+
+![04- comando para iniciar o ambiente-node](https://user-images.githubusercontent.com/8031302/198862463-b7029f61-f5f3-4b3f-96ed-fa08184cf86d.JPG)
+
+(imagem do comando npm init -y no terminal)
+
+![05- arquivo gerado dentro do projeto-node](https://user-images.githubusercontent.com/8031302/198862481-e101374d-e7de-4533-9473-90826e00de04.JPG)
+
+(imagem do arquivo gerado no projeto após executar o comando anterior)
+
+
+
 ## Reinstalar o projeto em outra máquina
 
 Ao transferir o projeto para outra máquina ou para nuvem, devemos ignorar a pasta node_modules que esta dentro do projeto nesse momento. Então basta transferir o projeto e executar `npm install` que a instalação das dependências será feita automaticamente.
