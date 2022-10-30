@@ -14,27 +14,31 @@ Para esse tutorial irei utilizar o VS Code.
 
 1. criar uma pasta de trabalho
 2. abrir a pasta de trabalho no VS Code
-3. executar comando no terminal para criar projeto, com -y para pular as perguntas da criação do projeto
-   1.  `npm init -y` 
-4. executar o comando para trabalhar com  `npm intall express --save`
-5. criar um novo arquivo com nome index.js
-6. para executar a aplicação usar comando `node index.js`
+3. abrir o terminal no modo Bash
+4. executar comando no terminal para criar projeto, com -y para pular as perguntas da criação do projeto
+   - `npm init -y` 
+5. confirmar que foi gerado o arquivo package.json
+6. executar o comando para trabalhar com  `npm intall express --save`
+7. criar um novo arquivo com nome index.js
+8. para executar a aplicação usar comando `node index.js`
+
+### Primeiro projeto, primeiros passos por imagens
 
 ![02- criar projeto-node](https://user-images.githubusercontent.com/8031302/198862265-760eda0d-63f9-425b-96f3-3a77a0733240.jpg)
 
-(imagem criando projeto - definir a pasta de trabalho)
+(1. imagem criando projeto - definir a pasta de trabalho)
 
 ![03- abrir terminal-node](https://user-images.githubusercontent.com/8031302/198862342-c2fdfa71-73bf-4bae-b5f7-f290aa690a14.jpg)
 
-(imagem abrindo o terminal)
+(2. imagem abrindo o terminal)
 
 ![04- comando para iniciar o ambiente-node](https://user-images.githubusercontent.com/8031302/198862463-b7029f61-f5f3-4b3f-96ed-fa08184cf86d.JPG)
 
-(imagem do comando npm init -y no terminal)
+(3. imagem do comando npm init -y no terminal)
 
 ![05- arquivo gerado dentro do projeto-node](https://user-images.githubusercontent.com/8031302/198862481-e101374d-e7de-4533-9473-90826e00de04.JPG)
 
-(imagem do arquivo gerado no projeto após executar o comando anterior)
+(4. imagem do arquivo gerado no projeto após executar o comando anterior)
 
 
 
