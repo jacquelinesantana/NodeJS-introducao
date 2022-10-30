@@ -4,6 +4,8 @@ Bem vinde a esse tutorial, o objetivo aqui é escrever uma api em Node.Js e ente
 
 `npm -v`
 
+![01- versao-node](https://user-images.githubusercontent.com/8031302/198862094-deafcff2-e5ea-4b66-aeca-e93226191804.JPG)
+
 (imagem da ilustrativa do comando executado no prompt de comandos)
 
 Para esse tutorial irei utilizar o VS Code.
