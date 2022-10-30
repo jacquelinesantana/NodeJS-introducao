@@ -28,7 +28,7 @@ Para esse tutorial irei utilizar o VS Code.
 
 (1. imagem criando projeto - definir a pasta de trabalho)
 
-![03- abrir terminal-node](https://user-images.githubusercontent.com/8031302/198862342-c2fdfa71-73bf-4bae-b5f7-f290aa690a14.jpg)
+![03- abrir terminal-node](https://user-images.githubusercontent.com/8031302/198862865-e09a493d-db55-4ea8-b3d8-7a7d09550cd3.jpg)
 
 (2. imagem abrindo o terminal)
 
