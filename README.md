@@ -10,6 +10,12 @@ Bem vinde a esse tutorial, o objetivo aqui é escrever uma api em Node.Js e ente
 
 Para esse tutorial irei utilizar o VS Code.
 
+> Dicas de estudo, o material em algumas partes terá primeiro a parte teórica e em seguida imagens ilustrativas, recomenda-se ler esse primeiro conteúdo primeiro para depois realizar a prática do mesmo, em um próximo tutorial vamos explorar aplicações a cada passo ainda mais completas. Objetivo final será ter o CRUD(cadastrar, ler, atualizar e deletar ) através de uma aplicação NODE backend.
+>
+
+> Dica 2 de estudo, recomenda-se ler o material sobre Javascript e/ou ter conhecimento do básico em Javascript antes de seguir com esse material, dessa forma você vai ter mais domínio sobre o que veremos aqui. Material de [Javascript primeiros passos](https://jsfiddle.net/user/tijacque/fiddles/) será incorporado nesse repositório.
+>
+
 ## Primeiro projeto, mensagem Hello world
 
 1. criar uma pasta de trabalho
@@ -18,9 +24,9 @@ Para esse tutorial irei utilizar o VS Code.
 4. executar comando no terminal para criar projeto, com -y para pular as perguntas da criação do projeto
    - `npm init -y` 
 5. confirmar que foi gerado o arquivo package.json
-6. executar o comando para trabalhar com  `npm intall express --save`
+6. executar o comando para trabalhar com  `npm intall express --save`, após executar esse comando, espera-se encontrar uma pasta chamada node-modules com as bibliotecas incluídas, entre elas e express
 7. criar um novo arquivo com nome index.js
-8. para executar a aplicação usar comando `node index.js`
+8. por último, o próximo passo **só deve ser executado após escrever o código do seu arquivo index** que esta nesse mesmo material no próximo capitulo, para executar a aplicação usar comando `node index.js`
 
 ### Primeiro projeto, primeiros passos por imagens
 
@@ -79,7 +85,7 @@ const app = express()
 
 A primeiras linha, faz a inclusão do Framework, chamando ele dentro de uma constante chamada express. Essa linha pode vir escrita `import express from 'express';` em algumas aplicações também, que basicamente esta fazendo a mesma coisa, chamando as bibliotecas do Framework para atuarem na aplicação.
 
-A segunda linha, estamos instanciando a biblioteca para utilizar os seus métodos. A partir desse ponto, onde lemos app entendemos que estamos chamando a Express para utilizarmos algum método da mesma.
+A segunda linha, estamos iniciando a biblioteca para utilizar os seus métodos. A partir desse ponto, onde lemos app entendemos que estamos chamando a Express para utilizarmos algum método da mesma.
 
 ```
 app.get('/',(req, resp)=>{
@@ -115,4 +121,6 @@ app.listen(8081,()=>{
 ```
 
 Por último, temos a Express sendo novamente chamada para a escrita do método que diz em que porta deve ser entregue essa aplicação, no caso porta 8081, o valor do console.log será exibido para o servidor e não para o cliente. 
+
+### Imagens da aplicação em execução
 
