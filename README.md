@@ -136,4 +136,13 @@ app.listen(8081,()=>{
 Por último, temos a Express sendo novamente chamada para a escrita do método que diz em que porta deve ser entregue essa aplicação, no caso porta 8081, o valor do console.log será exibido para o servidor e não para o cliente. 
 
 ### Imagens da aplicação em execução
+![11 - executar indexjs - node](https://user-images.githubusercontent.com/8031302/199381803-fcc95857-d5d5-41ea-a176-ff64ef45b5fd.jpg)
+![12 - resposta requisicao 1 - node](https://user-images.githubusercontent.com/8031302/199381845-40ee399a-3d8c-484b-a376-5eb5bb55e1cd.jpg)
+![13 - resposta da requisicao 2 - node](https://user-images.githubusercontent.com/8031302/199381876-7c4ee680-a6a9-4b46-8509-363ca9350810.jpg)
+
+![14 - resultado segunda requisicao 2 - node](https://user-images.githubusercontent.com/8031302/199381898-72f50cb6-8032-488c-b87b-945e9547dc3b.jpg)
+
+![15 - requisicao 2 com parametros insomnia - node](https://user-images.githubusercontent.com/8031302/199381923-b15249b6-24fb-4c13-8878-65750c192d58.jpg)
+![16 - requisicao 2 com parametros no vc - node](https://user-images.githubusercontent.com/8031302/199381943-10acdb80-d64f-4ffb-a36a-68b15fefee7f.jpg)
+
 
