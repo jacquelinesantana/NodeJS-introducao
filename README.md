@@ -8,13 +8,29 @@ Bem vinde a esse tutorial, o objetivo aqui é escrever uma api em Node.Js e ente
 
 (imagem da ilustrativa do comando executado no prompt de comandos)
 
-Para esse tutorial irei utilizar o VS Code.
+Para esse tutorial irei utilizar o VS Code para a digitar os códigos e executar a aplicação e o Insomnia será utilizado para consumir/ acessar essa aplicação. 
 
-> Dicas de estudo, o material em algumas partes terá primeiro a parte teórica e em seguida imagens ilustrativas, recomenda-se ler esse primeiro conteúdo primeiro para depois realizar a prática do mesmo, em um próximo tutorial vamos explorar aplicações a cada passo ainda mais completas. Objetivo final será ter o CRUD(cadastrar, ler, atualizar e deletar ) através de uma aplicação NODE backend.
->
+Link da Ide e do Insomnia:
 
-> Dica 2 de estudo, recomenda-se ler o material sobre Javascript e/ou ter conhecimento do básico em Javascript antes de seguir com esse material, dessa forma você vai ter mais domínio sobre o que veremos aqui. Material de [Javascript primeiros passos](https://jsfiddle.net/user/tijacque/fiddles/) será incorporado nesse repositório.
->
+https://code.visualstudio.com/download
+
+https://insomnia.rest/download
+
+## Objetivo
+
+O objetivo desse material é estudo e ensino simplificado, utilizando linguagem simplificada e prática sempre de forma gradual, onde vamos aumentar o grau de complexidade aos poucos, possibilitando assim construir um entendimento mais sólido.
+
+## Reforçando alguns conceitos: Api e Insomnia
+
+1. uma api é um sistema que irá fornecer algum recurso a alguém que necessite, geralmente utilizamos essas api's para realizar cadastro, retornar informações de algum banco de dados ou qualquer outro tipo de recurso, a api deve ter uma documentação que vai explicar o que ela tem como serviços/funcionalidades e como podemos fazer uso desses serviços/funcionalidades;
+2. para consumir api, ou seja utiliza-la por algum outro sistema, ou front end, é bem comum utilizarmos de ferramentas que nos ajudam a consumir esses serviços/funcionalidades. Imagina que você tem que integrar um serviço em seu site, esse serviço tem regras para ser utilizado, teríamos que fazer um código que atenda todas essas regras ... Antes mesmo de começarmos a codar uma solução podemos testar essa api fazendo uso dela sem nos preocuparmos com código. Isso graças a ferramentas como por exemplo: insomnia ou postman, vale lembrar que essas ferramentas também podem gerar códigos para consumir as api's;
+3. quando estamos desenvolvendo uma api, podemos também utilizar essas ferramentas para testar nossas funcionalidades e validarmos se estamos seguindo um caminho assertivo ou não. Sim também existem outras formas de se testar, mas no momento não vamos nos aprofundar nesse ponto;
+
+Vamos oferecer em breve um material mais focado em conceitos sobre api, rest, rest full, verbos http, endpoint e outros.
+
+> **Dica de estudo**, o material em algumas partes terá primeiro a parte teórica e em seguida imagens ilustrativas, recomenda-se ler esse primeiro conteúdo primeiro para depois realizar a prática do mesmo, em um próximo tutorial vamos explorar aplicações a cada passo ainda mais completas. Objetivo final será ter o CRUD(cadastrar, ler, atualizar e deletar ) através de uma aplicação NODE backend.
+
+> **Dica 2 de estudo**, recomenda-se ler o material sobre Javascript e/ou ter conhecimento do básico em Javascript antes de seguir com esse material, dessa forma você vai ter mais domínio sobre o que veremos aqui. Material de [Javascript primeiros passos](https://jsfiddle.net/user/tijacque/fiddles/) será incorporado nesse repositório e será aprimorado em breve.
 
 ## Primeiro projeto, mensagem Hello world
 
@@ -135,7 +151,56 @@ app.listen(8081,()=>{
 
 Por último, temos a Express sendo novamente chamada para a escrita do método que diz em que porta deve ser entregue essa aplicação, no caso porta 8081, o valor do console.log será exibido para o servidor e não para o cliente. 
 
+### Entendendo o que muda no endpoint com e sem parâmetros
+
+Quando acessamos um website na internet, que não seja one page, temos durante a navegação a página principal desse portal e as demais que vão afetando o endereço que esta sendo exibido na barra da URL desse site. Então, em uma api também teremos endereços de internet que nos direcionam para os diferentes serviços dessa mesma api, temos o endereço principal e os secundários. 
+
+Exemplo:
+
+https://insomnia.rest/ endereço principal da página 
+
+https://insomnia.rest/pricing endereço secundário ao clicar no link **get started**
+
+Cada um dos links acima, vai abrir uma página diferente dentro do mesmo website, agora com essa analogia construída vamos avaliar nossa api.
+
+Quando criamos nossa api indicamos dois caminhos, o primeiro '/' e o segundo '/link2', então cada um desses endereços vai nos direcionar a um serviço da api.
+
+Na ferramenta escolhida para consumi da api, vamos indicar o endpoint que escrevemos no código acima, vale lembrar que para uma aplicação que esta sendo executada em seu computador o endpoint sempre iniciará com **localhost** seguido de **:** e a porta de acesso, no caso definimos a porta **8081**, seguida da terminação do endereço que também foi definido em nosso código.
+
+Sendo assim, o endpoint da nossa api é **localhost:8081/**  e **localhost:8081/link2**
+
+Para essa aplicação também teremos a possibilidade de enviar para o servidor valores a serem trabalhados, esses valores estão a serem enviados do Insomnia para o servidor, chamamos de parâmetros. Você pode já ter visto algo parecido ao navegar pela internet.
+
+Os parâmetros, quando passados por URI seguem a seguinte estrutura:
+
+1. endpoint: **localhost:8081/link2**
+2. sinal de **?**
+3. nome do atributo **nome=**
+4. valor do atributo **ana**
+5. Caso necessário seguir passando mais atributos utilizamos o sinal **&**
+6. segundo atributo **sobrenome=**
+7. valor do segundo atributo **Silva**
+
+Resultado final: **localhost:8081/link2?nome=ana&sobrenome=Silva**
+
+> Antes de executar no insomnia precisamos iniciar o serviço no servidor, através do terminal dentro do VS Code, siga as instruções a seguir para realizar esse processo.
+
+### Testando a aplicação:
+
+Para executar a aplicação execute o comando: `node nome_do_arquivo.js`
+
+1. executar o comando`node index.js`
+2. abrir o Insomnia e escrever o endereço: **localhost:8081/** para acessar a primeira funcionalidade
+3. clicar no botão **send**
+4. para acessar a segunda funcionalidade vamos usar o endpoint **localhost:8081/link2**
+5. para acessar a segunda funcionalidade retornando parâmetros vamos indicar o endpoint: **localhost:8081/link2?nome=ana&sobrenome=Silva**
+
+
+
 ### Imagens da aplicação em execução
+
+
+
 ![11 - executar indexjs - node](https://user-images.githubusercontent.com/8031302/199381803-fcc95857-d5d5-41ea-a176-ff64ef45b5fd.jpg)
 ![12 - resposta requisicao 1 - node](https://user-images.githubusercontent.com/8031302/199381845-40ee399a-3d8c-484b-a376-5eb5bb55e1cd.jpg)
 ![13 - resposta da requisicao 2 - node](https://user-images.githubusercontent.com/8031302/199381876-7c4ee680-a6a9-4b46-8509-363ca9350810.jpg)
