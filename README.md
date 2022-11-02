@@ -46,6 +46,19 @@ Para esse tutorial irei utilizar o VS Code.
 
 (4. imagem do arquivo gerado no projeto após executar o comando anterior)
 
+![6 - instalando express -node](https://user-images.githubusercontent.com/8031302/199374317-9817041f-52b8-4d2f-9ab4-591e538bee57.JPG)
+
+(5. imagem do comando para instalação do Express)
+
+![7 - nodemodules-node](https://user-images.githubusercontent.com/8031302/199374350-1cef6f43-ca8f-4c1b-9c2b-2a192279918f.JPG)
+
+(6. imagem das bibliotecas do node-modules apos o comando para instalação do Express)
+
+![8 novo arquivo-node](https://user-images.githubusercontent.com/8031302/199374417-407c44a7-0e66-4e1a-bbbc-3e4cc690beb1.jpg)
+
+![9 - index-node](https://user-images.githubusercontent.com/8031302/199374491-5fc06f48-dece-46ff-ae5a-dccd7551ceaa.jpg)
+
+(7. criando um novo arquivo)
 
 
 ## Reinstalar o projeto em outra máquina
