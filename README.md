@@ -8,7 +8,7 @@ Bem vinde a esse tutorial, o objetivo aqui é escrever uma api em Node.Js e ente
 
 (imagem da ilustrativa do comando executado no prompt de comandos)
 
-Para esse tutorial irei utilizar o VS Code para a digitar os códigos e executar a aplicação e o Insomnia será utilizado para consumir/ acessar essa aplicação. 
+Para esse tutorial irei utilizar o Visual Studio Code para a digitar os códigos e executar a aplicação e o Insomnia será utilizado para consumir/ acessar essa aplicação. 
 
 Link da Ide e do Insomnia:
 
@@ -151,7 +151,7 @@ app.listen(8081,()=>{
 
 Por último, temos a Express sendo novamente chamada para a escrita do método que diz em que porta deve ser entregue essa aplicação, no caso porta 8081, o valor do console.log será exibido para o servidor e não para o cliente. 
 
-### Entendendo o que muda no endpoint com e sem parâmetros
+### O que é endpoint e o que são parâmetros
 
 Quando acessamos um website na internet, que não seja one page, temos durante a navegação a página principal desse portal e as demais que vão afetando o endereço que esta sendo exibido na barra da URL desse site. Então, em uma api também teremos endereços de internet que nos direcionam para os diferentes serviços dessa mesma api, temos o endereço principal e os secundários. 
 
@@ -159,15 +159,15 @@ Exemplo:
 
 https://insomnia.rest/ endereço principal da página 
 
-https://insomnia.rest/pricing endereço secundário ao clicar no link <u>**get started**</u>
+https://insomnia.rest/pricing endereço secundário ao clicar no link *<u>**get started**</u>*
 
 Cada um dos links acima, vai abrir uma página diferente dentro do mesmo website, agora com essa analogia construída vamos avaliar nossa api.
 
 Quando criamos nossa api indicamos dois caminhos, o primeiro '/' e o segundo '/link2', então cada um desses endereços vai nos direcionar a um serviço da api.
 
-Na ferramenta escolhida para consumi da api, vamos indicar o endpoint que escrevemos no código acima, vale lembrar que para uma aplicação que esta sendo executada em seu computador o endpoint sempre iniciará com **localhost** seguido de **:** e a porta de acesso, no caso definimos a porta **8081**, seguida da terminação do endereço que também foi definido em nosso código.
+Na ferramenta escolhida para consumi da api, vamos indicar o endpoint que escrevemos no código acima, vale lembrar que para uma aplicação que esta sendo executada em seu computador o endpoint sempre iniciará com ***localhost*** seguido de **:** e a porta de acesso, no caso definimos a porta ***8081***, seguida da terminação do endereço que também foi definido em nosso código.
 
-Sendo assim, o endpoint da nossa api é **localhost:8081/**  e **localhost:8081/link2**
+Sendo assim, o endpoint da nossa api é ***localhost:8081/***  e ***localhost:8081/link2***
 
 Para essa aplicação também teremos a possibilidade de enviar para o servidor valores a serem trabalhados, esses valores estão a serem enviados do Insomnia para o servidor, chamamos de parâmetros. Você pode já ter visto algo parecido ao navegar pela internet.
 
@@ -203,15 +203,43 @@ Para executar a aplicação execute o comando: `node nome_do_arquivo.js`
 
 ### Imagens da aplicação em execução
 
-
+(1. iniciando o arquivo no servidor com comando node nome_arquivo.js)
 
 ![11 - executar indexjs - node](https://user-images.githubusercontent.com/8031302/199381803-fcc95857-d5d5-41ea-a176-ff64ef45b5fd.jpg)
+
+(2. como ficará o consumo da primeira funcionalidade no insomnia, resultado será o olá mundo sem formatação, apenas como texto simples, note que acima desse retorno temos o código 200 ok - indicando sucesso no consumo do endpoint)
+
 ![12 - resposta requisicao 1 - node](https://user-images.githubusercontent.com/8031302/199381845-40ee399a-3d8c-484b-a376-5eb5bb55e1cd.jpg)
+
+(3. consumo da segunda funcionalidade da nossa aplicação, o resultado aqui esta no formato Json, também podemos notar o código 200 ok indicando sucesso nesse consumo)
+
 ![13 - resposta da requisicao 2 - node](https://user-images.githubusercontent.com/8031302/199381876-7c4ee680-a6a9-4b46-8509-363ca9350810.jpg)
+
+(4. assim como programamos o segundo método tras o req.query, ou seja ele tenta identificar se tem algum parâmetro passado para o servidor através da URI, por não encontrar nada ele trás o json do console vazio {} )
 
 ![14 - resultado segunda requisicao 2 - node](https://user-images.githubusercontent.com/8031302/199381898-72f50cb6-8032-488c-b87b-945e9547dc3b.jpg)
 
+(5. aqui enviamos a mesma solicitação anterior, dessa vez com os parâmetros: nome e sobrenome)
+
 ![15 - requisicao 2 com parametros insomnia - node](https://user-images.githubusercontent.com/8031302/199381923-b15249b6-24fb-4c13-8878-65750c192d58.jpg)
+
+(6. no servidor estamos agora vendo os valores que o req.query encontrou na URI o nome e o sobrenome, escritos na formatação Json)
+
 ![16 - requisicao 2 com parametros no vc - node](https://user-images.githubusercontent.com/8031302/199381943-10acdb80-d64f-4ffb-a36a-68b15fefee7f.jpg)
 
+## Conclusão do material API NodeJS 1
+
+Concluímos aqui nosso primeiro contato com o desenvolvimento de uma API NodeJs e vamos seguir para o próximo material, com um pouco mais de complexidade.
+
+Antes de seguirmos para esse próximo passo, proponho o desafio pessoal de criar uma nova api agora com 3 funcionalidades, os retornos devem ser com a formatação Json.
+
+Sugestão para o desafio:
+
+1. A api deve conter 3 funcionalidades na index.js sendo 1) ao acessar a funcionalidade 1 deve-se retornar a data e horário do servidor; 2) ao acessar a funcionalidade 2 deve-se criar um Json com o nome, modelo e ano de um automóvel; 3) ao acessar a funcionalidade 3 deve-se informar o estado e municio onde você mora, esses dados devem ser recebidos pela api e exibidos no console.
+
+## Próximo Material
+
+aguardando o link...
+
+Para enviar sugestão de material, me segue e me chama no Linkedin: https://www.linkedin.com/in/hernandesjacque/
 
