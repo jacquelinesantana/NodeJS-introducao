@@ -62,7 +62,7 @@ Vamos oferecer em breve um material mais focado em conceitos sobre api, rest, re
 
 (4. imagem do arquivo gerado no projeto após executar o comando anterior)
 
-![6 - instalando express -node](https://user-images.githubusercontent.com/8031302/199374317-9817041f-52b8-4d2f-9ab4-591e538bee57.JPG)
+![6 - instalando express 2-node](https://user-images.githubusercontent.com/8031302/199615065-6fda75c2-aa9a-44b8-b054-cc3c46de0b56.JPG)
 
 (5. imagem do comando para instalação do Express)
 
