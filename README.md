@@ -159,7 +159,7 @@ Exemplo:
 
 https://insomnia.rest/ endereço principal da página 
 
-https://insomnia.rest/pricing endereço secundário ao clicar no link **get started**
+https://insomnia.rest/pricing endereço secundário ao clicar no link <u>**get started**</u>
 
 Cada um dos links acima, vai abrir uma página diferente dentro do mesmo website, agora com essa analogia construída vamos avaliar nossa api.
 
@@ -173,27 +173,31 @@ Para essa aplicação também teremos a possibilidade de enviar para o servidor 
 
 Os parâmetros, quando passados por URI seguem a seguinte estrutura:
 
-1. endpoint: **localhost:8081/link2**
-2. sinal de **?**
-3. nome do atributo **nome=**
-4. valor do atributo **ana**
-5. Caso necessário seguir passando mais atributos utilizamos o sinal **&**
-6. segundo atributo **sobrenome=**
-7. valor do segundo atributo **Silva**
+1. endpoint: `localhost:8081/link2`
+2. sinal de `?`
+3. nome do atributo `nome=`
+4. valor do atributo `ana`
+5. Caso necessário seguir passando mais atributos utilizamos o sinal `&`
+6. segundo atributo `sobrenome=`
+7. valor do segundo atributo `Silva`
 
-Resultado final: **localhost:8081/link2?nome=ana&sobrenome=Silva**
+Resultado final: `localhost:8081/link2?nome=ana&sobrenome=Silva`
 
 > Antes de executar no insomnia precisamos iniciar o serviço no servidor, através do terminal dentro do VS Code, siga as instruções a seguir para realizar esse processo.
+
+> Outro ponto importante, como sabemos que devemos informar ou não um parametro, ou qual é o endpoint? Simples, através da documentação ou se formos nós a pessoa desenvolvedora da api.
+
+> Acesse a seguinte documentação de api e veja um exemplo de como a documentação é importante em uma api e como uma api pode nos prestar um serviço. https://viacep.com.br/
 
 ### Testando a aplicação:
 
 Para executar a aplicação execute o comando: `node nome_do_arquivo.js`
 
 1. executar o comando`node index.js`
-2. abrir o Insomnia e escrever o endereço: **localhost:8081/** para acessar a primeira funcionalidade
-3. clicar no botão **send**
-4. para acessar a segunda funcionalidade vamos usar o endpoint **localhost:8081/link2**
-5. para acessar a segunda funcionalidade retornando parâmetros vamos indicar o endpoint: **localhost:8081/link2?nome=ana&sobrenome=Silva**
+2. abrir o Insomnia e escrever o endereço: `localhost:8081/` para acessar a primeira funcionalidade
+3. clicar no botão `send`
+4. para acessar a segunda funcionalidade vamos usar o endpoint `localhost:8081/link2`
+5. para acessar a segunda funcionalidade retornando parâmetros vamos indicar o endpoint: `localhost:8081/link2?nome=ana&sobrenome=Silva`
 
 
 
