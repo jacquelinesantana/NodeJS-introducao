@@ -40,7 +40,7 @@ Vamos oferecer em breve um material mais focado em conceitos sobre api, rest, re
 4. executar comando no terminal para criar projeto, com -y para pular as perguntas da criação do projeto
    - `npm init -y` 
 5. confirmar que foi gerado o arquivo package.json
-6. executar o comando para trabalhar com  `npm intall express --save`, após executar esse comando, espera-se encontrar uma pasta chamada node-modules com as bibliotecas incluídas, entre elas e express
+6. executar o comando para trabalhar com  `npm install express --save`, após executar esse comando, espera-se encontrar uma pasta chamada node-modules com as bibliotecas incluídas, entre elas e express
 7. criar um novo arquivo com nome index.js
 8. por último, o próximo passo **só deve ser executado após escrever o código do seu arquivo index** que esta nesse mesmo material no próximo capitulo, para executar a aplicação usar comando `node index.js`
 
